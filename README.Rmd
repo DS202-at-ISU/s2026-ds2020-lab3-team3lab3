@@ -58,9 +58,9 @@ For each team member, copy this part of the report.
 
 Each team member picks one of the statements in the FiveThirtyEight [analysis](https://fivethirtyeight.com/features/avengers-death-comics-age-of-ultron/) and fact checks it based on the data. Use dplyr functionality whenever possible.
 
-### FiveThirtyEight Statement
+### FiveThirtyEight Statement: Alina
 
-> Quote the statement you are planning to fact-check.
+> Quote the statement you are planning to fact-check. : "There’s a 2-in-3 chance that a member of the Avengers returned from their first stint in the afterlife, but only a 50 percent chance they recovered from a second or third death.8"
 
 ### Include the code
 
@@ -71,3 +71,37 @@ Make sure to include the code to derive the (numeric) fact for the statement
 Include at least one sentence discussing the result of your fact-checking endeavor.
 
 Upload your changes to the repository. Discuss and refine answers as a team.
+
+
+
+### FiveThirtyEight Statement: Sravya
+
+> Quote the statement you are planning to fact-check. "Out of 173 listed Avengers, my analysis found that 69 had died at least one time after they joined the team.5"
+
+### Include the code
+
+Make sure to include the code to derive the (numeric) fact for the statement
+
+### Include your answer
+
+Include at least one sentence discussing the result of your fact-checking endeavor.
+
+Upload your changes to the repository. Discuss and refine answers as a team.
+
+
+
+
+### FiveThirtyEight Statement: Kalyna
+
+> Quote the statement you are planning to fact-check.: "Of the nine Avengers we see on screen — Iron Man, Hulk, Captain America, Thor, Hawkeye, Black Widow, Scarlet Witch, Quicksilver and The Vision — every single one of them has died at least once in the course of their time Avenging in the comics."
+
+### Include the code
+
+Make sure to include the code to derive the (numeric) fact for the statement
+
+### Include your answer
+
+Include at least one sentence discussing the result of your fact-checking endeavor.
+
+Upload your changes to the repository. Discuss and refine answers as a team.
+
