@@ -94,13 +94,23 @@ Upload your changes to the repository. Discuss and refine answers as a team.
 
 ### Include the code
 
-Make sure to include the code to derive the (numeric) fact for the statement
+```{r}
+# Number of Avengers who died at least once
+death_summary <- deaths %>%
+  group_by(URL) %>%
+  summarise(died = any(Death == "YES", na.rm = TRUE)) %>%
+  summarise(
+    total_avengers = n(),
+    died_count = sum(died),
+    percent = died_count / total_avengers
+  )
+
+death_summary
+```
 
 ### Include your answer
 
-Include at least one sentence discussing the result of your fact-checking endeavor.
-
-Upload your changes to the repository. Discuss and refine answers as a team.
+The results show that 69 out of 173 Avengers died at least once, which is about 39.88%. This closely matches the claim in the article that around 40% of Avengers have died, so the statement is accurate.
 
 
 
