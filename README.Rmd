@@ -132,11 +132,35 @@ The results show that 69 out of 173 Avengers died at least once, which is about 
 
 ### Include the code
 
-Make sure to include the code to derive the (numeric) fact for the statement
+```{r}
+av9 <- c(
+  'Anthony Edward "Tony" Stark',
+  "Robert Bruce Banner",
+  "Steven Rogers",
+  "Thor Odinson",
+  "Clinton Francis Barton",
+  "Natalia Alianovna Romanova",
+  "Wanda Maximoff",
+  "Pietro Maximoff",
+  "Victor Shade (alias)"
+)
+
+deaths9 <- deaths %>%
+  filter(`Name.Alias` %in% av9)
+
+result <- deaths9 %>%
+  group_by(`Name.Alias`) %>%
+  summarize(
+    died_at_least_once = any(Death == "YES", na.rm = TRUE)
+  )
+
+print(result)
+  
+```
 
 ### Include your answer
 
-Include at least one sentence discussing the result of your fact-checking endeavor.
+As you can see, the statement above is true: every Avengers member that is said to have onscreen appearances has died at least once, according to this dataset.
 
 Upload your changes to the repository. Discuss and refine answers as a team.
 
