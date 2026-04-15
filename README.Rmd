@@ -78,15 +78,26 @@ Each team member picks one of the statements in the FiveThirtyEight [analysis](h
 
 ### Include the code
 
+```{r}
+death_return <- deaths %>%
+  left_join(returns, by = c("URL", "Time"))
+
+return_probs <- death_return %>%
+  filter(Death == "YES") %>%   
+  group_by(Time) %>%
+  summarise(
+    total_deaths = n(),
+    returns = sum(Return == "YES", na.rm = TRUE),
+    prob_return = returns / total_deaths
+  )
+
+return_probs
+```
 Make sure to include the code to derive the (numeric) fact for the statement
 
 ### Include your answer
 
-Include at least one sentence discussing the result of your fact-checking endeavor.
-
-Upload your changes to the repository. Discuss and refine answers as a team.
-
-
+The data shows that the probability of an Avenger returning form the first death is about 67&, which is very very close to 2 in 3. For the second and third deaths the data shows both as exactly 50% which also matches the claim from FiveThirtyEight. The claim is accurate!
 
 ### FiveThirtyEight Statement: Sravya
 
